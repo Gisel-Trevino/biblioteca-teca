@@ -35,7 +35,7 @@
 
                 <div class="hidden md:flex items-center space-x-8 font-medium">
                     <a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300">Inicio</a>
-                    <a href="#" class="bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 transition duration-300 shadow-sm flex items-center">
+                    <a href="{{route('login')}}" class="bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 transition duration-300 shadow-sm flex items-center">
                         <i class="fas fa-user mr-2"></i> Login
                     </a>
                 </div>
