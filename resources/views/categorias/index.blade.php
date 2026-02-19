@@ -3,6 +3,12 @@
     <div class="container mx-auto px-4 py-8">
         <h1 class="text-2x1 font-bold mb-6">Categorias</h1>
 
+        @if(session('success'))
+            <div class='bg-green-100  border border-green-400 text-green-700 px-4 py-3 rounded mb-4 shadow-sm' role="alert">
+                {{session('success')}}
+            </div>
+        @endif
+
         <a href="{{route('categorias.create')}}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rourded m">Agregar categoria</a>
         <br><br/>
 
@@ -12,6 +18,7 @@
                     <tr>
                         <th class="px-4 py-2 border-b text-left">ID</th>
                         <th class="px-4 py-2 border-b text-left">Nombre</th>
+                        <th class="px-4 py-2 border-b text-left">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -19,6 +26,14 @@
                         <tr>
                             <td class="px-4 py-2 border-b">{{ $categoria->id }}</td>
                             <td class="px-4 py-2 border-b">{{ $categoria->nombre }}</td>
+                            <td class="px-4 py-2 border-b">
+                                <a href="{{ route('categorias.edit', $categoria->id) }}" class="bg-yellow-500 hover:bg-yellow-700 text-white px-3 py-2 rounded">Editar</a>
+                                <form action="{{route('categorias.destroy', $categoria->id)}}" method="POST" class="inline-block">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="bg-red-500 hover:bg-red-700 text-white px-3 py-2 rounded">Eliminar</button>
+                                </form>
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>

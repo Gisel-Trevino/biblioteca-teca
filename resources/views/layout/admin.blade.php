@@ -19,7 +19,7 @@
             </div>
             
             <nav class="hidden md:flex flex-wrap items-center text-base justify-center space-x-6">
-                <a href="#" class="hover:text-blue-400 transition">Inicio</a>
+                <a href="{{route('home')}}" class="hover:text-blue-400 transition">Inicio</a>
                 <a href="#" class="hover:text-blue-400 transition">Usuarios</a>
                 <a href="#" class="hover:text-blue-400 transition">Libros</a>
                 <a href="#" class="hover:text-blue-400 transition">Préstamos</a>
@@ -30,7 +30,7 @@
     <div class="flex pt-16 h-screen overflow-hidden">       
         <aside id="sidebar" class="bg-slate-900 text-white w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out z-40 shadow-xl">
             <nav>
-                <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-600 hover:text-white mb-2 bg-blue-700">
+                <a href="{{route('home')}}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-600 hover:text-white mb-2 bg-blue-700">
                     <i class="fas fa-home mr-3"></i>Inicio
                 </a>
                 <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-700 hover:text-blue-400 mb-2">
