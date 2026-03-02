@@ -20,8 +20,6 @@
             
             <nav class="hidden md:flex flex-wrap items-center text-base justify-center space-x-6">
                 <a href="{{route('home')}}" class="hover:text-blue-400 transition">Inicio</a>
-                <a href="#" class="hover:text-blue-400 transition">Usuarios</a>
-                <a href="#" class="hover:text-blue-400 transition">Libros</a>
                 <a href="#" class="hover:text-blue-400 transition">Préstamos</a>
                 <a href="#" class="text-red-400 hover:text-red-500 transition font-semibold">Salir</a>
             </nav>
@@ -34,11 +32,6 @@
                     <i class="fas fa-home mr-3"></i>Inicio
                 </a>
                 <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-700 hover:text-blue-400 mb-2">
-                    <i class="fas fa-book mr-3"></i>Libros
-                </a>
-                <a href="{{route('categorias.index')}}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-700 hover:text-blue-400 mb-2">
-                    <i class="fas fa-tags mr-3"></i>Categorias</a>
-                <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-700 hover:text-blue-400 mb-2">
                     <i class="fas fa-exchange-alt mr-3"></i>Préstamos
                 </a>
                 <div class="border-t border-slate-700 my-4"></div>
@@ -46,6 +39,7 @@
                     <i class="fas fa-sign-out-alt mr-3"></i>Salir
                 </a>
             </nav>
+
             <div class="absolute bottom-0 left-0 w-full border-t border-slate-700 p-4 bg-slate-900">
                     <div class="flex items-center gap-3">
                         <div class="flex-shrink-0">
@@ -63,7 +57,8 @@
                             </span>
                         </div>
                     </div>
-                </div>
+            </div>
+            
         </aside>
         <main class="flex-1 flex flex-col overflow-y-auto">
 @yield('content')
