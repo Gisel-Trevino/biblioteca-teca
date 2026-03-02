@@ -17,7 +17,10 @@ Route::post('/login', [AuthController::class, 'login'])->name('login');
 Route::middleware('auth')->group(function (){
     Route::get('/home', [HomeController::class, 'index'])->name('home');
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
-    
+});
+
+
+Route::middleware(['auth', 'user_type:user'])->group(function(){
     Route::get('/categorias', [CategoriasController::class, 'index'])->name('categorias.index');
     Route::get('/categorias/create', [CategoriasController::class, 'create'])->name('categorias.create');
     Route::post('/categorias/store', [CategoriasController::class, 'store'])->name('categorias.store');
