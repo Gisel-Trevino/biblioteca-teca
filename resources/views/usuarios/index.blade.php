@@ -22,7 +22,7 @@
                     @foreach($usuarios as $usuario)
                         <tr>
                             <td class="px-4 py-2 border-b">{{ $usuario->id }}</td>
-                            <td class="px-4 py-2 border-b">{{ $usuario->nombre }}</td>
+                            <td class="px-4 py-2 border-b">{{ $usuario->name }}</td>
                             <td class="px-4 py-2 border-b">{{ $usuario->email }}</td>
                             <td class="px-4 py-2 border-b">{{ $usuario->user_type }}</td>
 
