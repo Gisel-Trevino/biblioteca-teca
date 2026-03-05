@@ -4,7 +4,7 @@
         <h1 class="text-2x1 font-bold mb-6">Lista de Usuarios</h1>
 
 
-        <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rourded m">Crear usuario</a>
+        <a href="{{route('usuarios.create')}}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rourded m">Crear usuario</a>
         <br><br/>
 
         <div class="bg-white shadow-md rounded-lg p-6">
@@ -27,7 +27,7 @@
                             <td class="px-4 py-2 border-b">{{ $usuario->user_type }}</td>
 
                             <td class="px-4 py-2 border-b">
-                                <a href="#" class="bg-yellow-500 hover:bg-yellow-700 text-white px-3 py-2 rounded">Editar</a>
+                                <a href="{{route('usuarios.edit', $usuario->id)}}" class="bg-yellow-500 hover:bg-yellow-700 text-white px-3 py-2 rounded">Editar</a>
                                 <form action="#" method="POST" class="inline-block">
                                     @csrf
                                     @method('DELETE')
