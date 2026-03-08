@@ -1,6 +1,6 @@
 @extends('layout.admin')
 @section('content')
-            <div class="container mx-auto px-4 py-8">
+        <div class="container mx-auto px-4 py-8">
         <h1 class="text-2x1 font-bold mb-6">Lista de Usuarios</h1>
 
 
@@ -28,11 +28,7 @@
 
                             <td class="px-4 py-2 border-b">
                                 <a href="{{route('usuarios.edit', $usuario->id)}}" class="bg-yellow-500 hover:bg-yellow-700 text-white px-3 py-2 rounded">Editar</a>
-                                <form action="#" method="POST" class="inline-block">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="bg-red-500 hover:bg-red-700 text-white px-3 py-2 rounded">Eliminar</button>
-                                </form>
+                                <a href="{{route('usuarios.delete_confirm', $usuario->id)}}"class="bg-red-500 hover:bg-red-700 text-white px-3 py-2 rounded">Eliminar</a>
                             </td>
                         </tr>
                     @endforeach
