@@ -22,7 +22,7 @@
                 <a href="{{route('home')}}" class="hover:text-blue-400 transition">Inicio</a>
                 <a href="#" class="hover:text-blue-400 transition">Libros</a>
                 <a href="{{route('usuarios.index')}}" class="hover:text-blue-400 transition">Usuarios</a>
-                <a href="#" class="hover:text-blue-400 transition">Préstamos</a>
+                <a href="{{route('prestamos.index')}}" class="hover:text-blue-400 transition">Préstamos</a>
                 <a href="#" class="text-red-400 hover:text-red-500 transition font-semibold">Salir</a>
             </nav>
         </div>
@@ -40,7 +40,7 @@
                     <i class="fas fa-tags mr-3"></i>Categorias</a>
                 <a href="{{route('usuarios.index')}}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-700 hover:text-blue-400 mb-2">
                     <i class="fas fa-users mr-3"></i>Usuarios</a>
-                <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-700 hover:text-blue-400 mb-2">
+                <a href="{{route('prestamos.index')}}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-700 hover:text-blue-400 mb-2">
                     <i class="fas fa-exchange-alt mr-3"></i>Préstamos
                 </a>
                 <div class="border-t border-slate-700 my-4"></div>
