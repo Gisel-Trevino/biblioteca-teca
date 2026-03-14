@@ -17,18 +17,18 @@
             </div>
         </form>
         @isset($usuario)
-        <div class="mt-6">
-            <h2 class="text-xl font-bold mb-4">Usuario encontrado:</h2>
-            <p><strong>ID:</strong> {{$usuario->id}}</p>
-            <p><strong>Nombre:</strong> {{$usuario->name}}</p>
-            <p><strong>Email:</strong> {{$usuario->email}}</p>
-        </div>
+            <div class="mt-6">
+                <h2 class="text-xl font-bold mb-4">Usuario encontrado:</h2>
+                <p><strong>ID:</strong> {{$usuario->id}}</p>
+                <p><strong>Nombre:</strong> {{$usuario->name}}</p>
+                <p><strong>Email:</strong> {{$usuario->email}}</p>
+            </div>
 
-        <form action="{{route('prestamos.select_libro')}}" method="POST">
-            @csrf
-            <input type="hidden" name="usuario_id" value="{{$usuario->id}}">
-            <input type="submit" value="Seleccionar Libro" class="px-4 py-2 bg-green-500 hover:bg-green-700 text-white rounded transition">
-        </form>
+            <form action="{{route('prestamos.select_libro')}}" method="POST">
+                @csrf
+                <input type="hidden" name="usuario_id" value="{{$usuario->id}}">
+                <input type="submit" value="Seleccionar Libro" class="px-4 py-2 bg-green-500 hover:bg-green-700 text-white rounded transition">
+            </form>
         @endisset
     </div>
 @endsection
