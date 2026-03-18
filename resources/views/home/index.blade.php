@@ -7,15 +7,15 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                         <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
                             <h3 class="text-gray-500 text-sm font-medium uppercase">Libros Totales</h3>
-                            <p class="text-3xl font-bold text-gray-700">1,250</p>
+                            <p class="text-3xl font-bold text-gray-700">{{$librosCount}}</p>
                         </div>
                         <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
                             <h3 class="text-gray-500 text-sm font-medium uppercase">Préstamos Activos</h3>
-                            <p class="text-3xl font-bold text-gray-700">42</p>
+                            <p class="text-3xl font-bold text-gray-700">{{$prestamosCount}}</p>
                         </div>
                         <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
                             <h3 class="text-gray-500 text-sm font-medium uppercase">Usuarios Nuevos</h3>
-                            <p class="text-3xl font-bold text-gray-700">15</p>
+                            <p class="text-3xl font-bold text-gray-700">{{$usuariosCount}}</p>
                         </div>
                     </div>
 
@@ -46,9 +46,9 @@
                         @foreach($libros as $libro)
                         <tr class="hover:bg-gray-50 transition">
                             <td class="px-6 py-4 flex items-center">
-                                <div class="w-10 h-14 bg-gray-200 rounded mr-3 flex-shrink-0 overflow-hidden">
+                                <!--<div class="w-10 h-14 bg-gray-200 rounded mr-3 flex-shrink-0 overflow-hidden">
                                     <img src="https://via.placeholder.com/40x56" alt="Portada" class="w-full h-full object-cover">
-                                </div>
+                                </div>-->
                                 <div>
                                     <span class="block font-bold text-gray-900 leading-tight">{{$libro->nombre}}</span>
                                     <span class="text-xs text-gray-500">{{$libro->isbn}}</span>

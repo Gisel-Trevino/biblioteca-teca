@@ -20,6 +20,8 @@
                         <th class="px-4 py-2 border-b text-left">Libro</th>
                         <th class="px-4 py-2 border-b text-left">Usuario</th>
                         <th class="px-4 py-2 border-b text-left">Fecha de creación</th>
+                        <th class="px-4 py-2 border-b text-left">Estado</th>
+                        <th class="px-4 py-2 border-b text-left">Fecha de entrega</th>
                         <th class="px-4 py-2 border-b text-left">Acciones</th>
                     </tr>
                 </thead>
@@ -31,7 +33,17 @@
                             <td class="px-4 py-2 border-b">{{$prestamo->usuario->name}}</td>
                             <td class="px-4 py-2 border-b">{{$prestamo->created_at->format('Y-m-d')}}</td>
                             <td class="px-4 py-2 border-b">
-                                
+                                @if($prestamo->estado == 'pendiente')
+                                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold uppercase">Pendiente</span>
+                                @else
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-bold uppercase">Entregado</span>
+                                @endif
+                            </td>
+                            <td class="px-4 py-2 border-b">{{$prestamo->fecha_entrega ? $prestamo->fecha_entrega : 'N/A'}}</td>
+                            <td class="px-4 py-2 border-b">
+                                @if($prestamo->estado == 'pendiente')
+                                    <a href="{{ route('prestamos.entregar', $prestamo->id) }}" class="bg-green-500 hover:bg-green-700 text-white px-3 py-2 rounded">Entregar</a>
+                                @endif
                             </td>
                         </tr>
                     @endforeach
