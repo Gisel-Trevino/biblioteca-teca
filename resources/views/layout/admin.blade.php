@@ -20,10 +20,10 @@
             
             <nav class="hidden md:flex flex-wrap items-center text-base justify-center space-x-6">
                 <a href="{{route('home')}}" class="hover:text-blue-400 transition">Inicio</a>
-                <a href="#" class="hover:text-blue-400 transition">Libros</a>
+                <a href="{{route('libros.index')}}" class="hover:text-blue-400 transition">Libros</a>
                 <a href="{{route('usuarios.index')}}" class="hover:text-blue-400 transition">Usuarios</a>
                 <a href="{{route('prestamos.index')}}" class="hover:text-blue-400 transition">Préstamos</a>
-                <a href="#" class="text-red-400 hover:text-red-500 transition font-semibold">Salir</a>
+                <!--<a href="{{route('logout')}}" class="text-red-400 hover:text-red-500 transition font-semibold">Salir</a>-->
             </nav>
         </div>
     </header>
@@ -33,7 +33,7 @@
                 <a href="{{route('home')}}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-600 hover:text-white mb-2 bg-blue-700">
                     <i class="fas fa-home mr-3"></i>Inicio
                 </a>
-                <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-700 hover:text-blue-400 mb-2">
+                <a href="{{route('libros.index')}}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-700 hover:text-blue-400 mb-2">
                     <i class="fas fa-book mr-3"></i>Libros
                 </a>
                 <a href="{{route('categorias.index')}}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-700 hover:text-blue-400 mb-2">

@@ -21,10 +21,6 @@
                 @endforeach
             </select>
 
-            <!--<input type="text" name="libro_id" class="shadow appearence-none border rounded focus:outline-none focus:ring focus:border-blue-300" required>
-            <label for="libro_titulo" class="block text-gray-700 font-bold mb-2">Título Libro:</label>
-            <input type="text" name="libro_titulo" class="shadow appearence-none border rounded focus:outline-none focus:ring focus:border-blue-300" required>-->
-
             <input type="hidden" name="usuario_id" value="{{$usuario->id}}">
 
             <div class="flex items-center justify-between mt-4">

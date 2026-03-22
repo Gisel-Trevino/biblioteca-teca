@@ -8,7 +8,7 @@ use App\Models\Categoria;
 class CategoriasController extends Controller
 {
     public function index(){
-        $categorias = Categoria::paginate(2);
+        $categorias = Categoria::paginate(5);
         return view('categorias.index', compact('categorias'));
     }
 

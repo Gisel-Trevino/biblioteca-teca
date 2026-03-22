@@ -28,7 +28,7 @@ class PrestamosController extends Controller
             return view('prestamos.create', compact('usuario'));
         }
         if(!empty($usuario_nombre)){
-            $usuario = User::where('name', 'like', '%', $usuario_nombre, '%')->first();
+            $usuario = User::where('name', 'like', '%' . $usuario_nombre . '%')->first();
             return view('prestamos.create', compact('usuario'));
         }
     }

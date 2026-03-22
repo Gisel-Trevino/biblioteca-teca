@@ -6,9 +6,9 @@
             @csrf
             <div class="mb-4">
                 <label for="usuario_id" class="block text-gray-700 font-bold mb-2">ID del usuario:</label>
-                <input type="text" name="usuario_id" class="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300" required>
+                <input type="text" name="usuario_id" class="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300">
                 <label for="usuario_nombre" class="block text-gray-700 font-bold mb-2">Nombre del usuario:</label>
-                <input type="text" name="usuario_nombre" class="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300" required>
+                <input type="text" name="usuario_nombre" class="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300">
             </div>
 
             <div class="mt-4">
