@@ -10,7 +10,8 @@ use App\Models\Prestamo;
 class PrestamosController extends Controller
 {
     public function index(){
-        $prestamos = Prestamo::with('libro', 'usuario')->get();
+        //$prestamos = Prestamo::with('libro', 'usuario')->get();
+        $prestamos = Prestamo::paginate(5);
         return view('prestamos.index', compact('prestamos'));
     }
 
