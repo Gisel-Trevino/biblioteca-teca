@@ -61,7 +61,6 @@
                                 <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold uppercase">Disponible</span>
                                 @elseif($libro->estatus == 1)
                                 <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-bold uppercase">Prestado</span>
-                                @else
                                 @endif
                             </td>
                             <td class="px-6 py-4">

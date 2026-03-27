@@ -15,8 +15,6 @@
                 <thead>
                     <tr>
                         <th class="px-4 py-2 border-b text-left">ID</th>
-                        <!--<th class="px-4 py-2 border-b text-left">Fecha de entrega</th>
-                        <th class="px-4 py-2 border-b text-left">Estado</th>-->
                         <th class="px-4 py-2 border-b text-left">Libro</th>
                         <th class="px-4 py-2 border-b text-left">Usuario</th>
                         <th class="px-4 py-2 border-b text-left">Fecha de creación</th>
