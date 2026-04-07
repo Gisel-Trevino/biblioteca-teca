@@ -30,7 +30,7 @@
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
                     <i class="fas fa-book-open text-blue-600 text-3xl mr-3"></i>
-                    <span class="text-2xl font-bold text-gray-800">Biblio<span class="text-blue-600">Central</span></span>
+                    <span class="text-2xl font-bold text-gray-800">Biblio<span class="text-blue-600">teca</span></span>
                 </div>
 
                 <div class="hidden md:flex items-center space-x-8 font-medium">
@@ -51,7 +51,7 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-6 py-4 shadow-lg">
             <ul class="space-y-4 font-medium">
                 <li><a href="#" class="block text-blue-600 hover:bg-blue-50 py-2 rounded transition">Inicio</a></li>
-                <li><a href="#" class="block text-gray-700 hover:bg-blue-50 py-2 rounded transition flex items-center"><i class="fas fa-user mr-2 text-gray-500"></i>Login</a></li>
+                <li><a href="{{ route('login') }}" class="block text-gray-700 hover:bg-blue-50 py-2 rounded transition flex items-center"><i class="fas fa-user mr-2 text-gray-500"></i>Login</a></li>
             </ul>
         </div>
     </header>
