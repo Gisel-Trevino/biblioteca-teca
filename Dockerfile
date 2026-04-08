@@ -1,4 +1,4 @@
-# FASE 1: BUILD FRONTEND
+# ETAPA 1: BUILD DE FRONTEND
 FROM node:20 AS node_builder
 
 WORKDIR /app 
@@ -9,7 +9,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-# FASE 2: BUILD BACKEND
+# ETAPA 2: BUILD DE BACKEND
 FROM php:8.4-fpm
 
 # Instalar depedencias del sistema
