@@ -30,7 +30,7 @@
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
                     <i class="fas fa-book-open text-blue-600 text-3xl mr-3"></i>
-                    <span class="text-2xl font-bold text-gray-800">Biblio<span class="text-blue-600">teca</span></span>
+                    <span class="text-2xl font-bold text-gray-800">Biblio<span class="text-blue-600">Central</span></span>
                 </div>
 
                 <div class="hidden md:flex items-center space-x-8 font-medium">
