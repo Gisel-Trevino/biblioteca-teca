@@ -12,8 +12,8 @@ class HomeController extends Controller
     public function index(){
         $user = auth()->user();
         if($user->user_type === 'admin'){
-            $libros = Libro::paginate(5);
-            $librosCount = Libro::count();
+            $libros = Libro::with('categoria')->paginate(5);
+            $librosCount = $libros->total();
             $prestamosCount = Prestamo::where('estado', 'pendiente')->count();
             $usuariosCount = User::where('user_type', 'user')->count();
             return view('home.index', compact('libros', 'librosCount', 'prestamosCount', 'usuariosCount'));

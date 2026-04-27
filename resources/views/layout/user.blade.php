@@ -50,10 +50,13 @@
                         
                         <div class="flex flex-col overflow-hidden text-sm">
                             <span class="font-bold text-white truncate">
-                                {{ auth()->user()->name ?? 'Usuario invitado' }}
+                                <a href="{{route('usuarios.profile')}}" class="hover:text-blue-400 transition">
+                                    {{ auth()->user()->name }}
+                                </a>
                             </span>
                             <span class="text-xs text-slate-400 truncate">
-                                {{ auth()->user()->email ?? 'Sin correo' }}
+                                {{ auth()->user()->email }}
+                            </span>
                             </span>
                         </div>
                     </div>

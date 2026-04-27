@@ -43,10 +43,10 @@
                     <p class="text-red-500 text-xs italic mt-2">{{$message}}</p>
                 @enderror                   
             </div>
-            <button type="submit" class="px-4 py-2 bg-green-500 hover:bg-green-700 text-white rounded transition">Guardar Usuario</button>
-
             <div class="mt-4">
-                <a href="{{ route('usuarios.index') }}" class="inline-block px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white rounded transition">Volver a la lista de categorias</a>  
+                <button type="submit" class="px-4 py-2 bg-green-500 hover:bg-green-700 text-white rounded transition">Guardar Usuario</button>
+
+                <a href="{{ route('usuarios.index') }}" class="inline-block px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white rounded transition">Volver a la lista de usuarios</a>  
             </div>
 
         </form>

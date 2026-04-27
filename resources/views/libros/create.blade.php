@@ -30,8 +30,9 @@
                     @endforeach
                 </select>
             </div>
-        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">Guardar Libro</button>
                 <div class="mt-4">
+                        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">Guardar Libro</button>
+                        
                         <a href="{{ route('home') }}" class="inline-block px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white rounded transition">Cancelar</a>  
                 </div>
         </form>
